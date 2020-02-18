@@ -1,7 +1,7 @@
 # notification-list
 
 Technology
- ReactJs
+- ReactJs
 
 Link 
 https://dubhaus.000webhostapp.com/
