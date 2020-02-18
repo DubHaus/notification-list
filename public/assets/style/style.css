@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #022B35;
+}
+
+#root {
+  max-width: 500px;
+  height: 100vh;
+  max-height: 900px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+
+@media screen and (min-width: 500px) {
+  #root {
+    width: 400px;
+    height: 800px;
+    border-radius: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 500px) and (pointer:fine)  {
+  .wrap {
+    height: 90vh;
+    width: 380px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 25px;
+  }
+}

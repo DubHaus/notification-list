@@ -1,0 +1,31 @@
+#root {
+  font-family: 'Cabin', sans-serif;
+}
+header {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  top: 0;
+  z-index: 1;
+  padding: 0 15px;
+}
+
+.orange {
+  color: #F5AA91;
+}
+
+.btn-close {
+  background: transparent;
+  border: none;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  text-align: left;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}

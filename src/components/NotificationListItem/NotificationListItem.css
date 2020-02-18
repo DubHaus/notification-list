@@ -1,0 +1,160 @@
+.notifications__list_item {
+  border-radius: 5px;
+  list-style: none;
+  background: #fff;
+  margin-bottom: 15px;
+  animation-duration: 0.7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transition: all 0.5s ease 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes item-delete-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+
+.notifications__list_item.list  {
+  position: relative;
+}
+
+.notifications__list_item.list::before,
+.notifications__list_item.list::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 80px;
+  background: #FFF0EE;
+  box-shadow: 0px 2px 4px #F4BFB8;
+  transition: all 0.4s ease 0.1s;
+}
+
+.notifications__list_item.list::before {
+  z-index: 1;
+  width: 95%;
+  top: 7px;
+}
+.notifications__list_item.list::after {
+  width: 90%;
+  top: 14px;
+}
+
+.notifications__list_item .notifications__list_item {
+  height: 80px;
+}
+
+.notifications__list_item.list .notifications__list_item {
+  height: 0px;
+}
+
+.notifications__list_item__items {
+  padding: 0;
+}
+
+.notifications__list_item__wrap,
+.notifications__list_item .notifications__list_item  {
+  transition: all 0.4s ease;
+}
+
+.notifications__list_item__items {
+  margin-top: 15px;
+}
+
+.notifications__list_item.list .notifications__list_item__wrap {
+  z-index: 1;
+  box-shadow: 0px 2px 4px #F4BFB8;
+}
+
+.notifications__list_item__wrap {
+  height: 80px;
+  background: #FFF0EE;
+  position: relative;
+}
+
+.notifications__list_item__descr {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 15px;
+}
+
+.delete_btn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  right: -100px;
+  border-radius: 100px;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FF8642;
+  cursor: pointer;
+}
+
+.show-delete_btn-animation {
+  animation: show_deleteBtn 0.8s ease forwards;
+}
+
+.show-delete_btn-animation img {
+  animation: show_deleteBtnImg 0.8s ease forwards;
+}
+
+.list-animation::before, 
+.list-animation::after {
+  transform: translateX(-100px);
+}
+
+@keyframes show_deleteBtn {
+  0% {
+    width: 45px;
+  }
+  50% {
+    width: 50px;
+  }
+  100% {
+    width: 40px;
+  }
+}
+
+@keyframes show_deleteBtnImg {
+  0% {
+    transform: translateX(-2.5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+.notifications__list_item__photo {
+  width: 65px;
+  height: 65px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  background: #FED3E4;
+  border-radius: 3px;
+  margin-right: 12px;
+}
+
+.notifications__list_item__photo img {
+  width: 100%;
+}
+
+
